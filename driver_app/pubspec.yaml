@@ -1,0 +1,46 @@
+name: route_tracker
+description: "RouteTracker - Driver app for sending live bus location"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  # web socket
+  web_socket_channel: ^3.0.3
+  
+  # Location & Permissions
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  permission_handler: ^11.0.1
+
+  # Networking
+  http: ^1.1.0
+  #web_socket_channel: ^2.4.0
+
+  # State management
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/

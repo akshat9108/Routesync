@@ -1,0 +1,62 @@
+name: RouteSync
+description: Real-time bus tracking system
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  web_socket_channel: ^3.0.3
+
+  # Firebase
+  firebase_core: ^2.32.0
+  firebase_database: ^10.1.0
+
+  # Chat UI
+  flutter_chat_ui: ^1.6.8
+  flutter_chat_types: ^3.6.2
+
+  # Location
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  permission_handler: ^11.0.1
+
+  # Maps (OpenStreetMap)
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.0
+
+  # HTTP & API
+  http: ^1.1.0
+  dio: ^5.3.2
+
+  # State Management
+  provider: ^6.1.0
+
+  # Background Services
+  flutter_background_service: ^5.0.5
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+
+  # Utils
+  uuid: ^4.1.0
+  intl: ^0.18.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
